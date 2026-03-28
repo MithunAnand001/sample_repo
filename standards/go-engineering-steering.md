@@ -37,5 +37,3 @@ This document defines the strict engineering standards and idiomatic patterns fo
 ## 6. Infrastructure & Safety
 - **Time:** Strictly use `internal/utils/time.go` helpers. No direct `time.Now()` calls.
 - **Transactions:** Any operation affecting multiple tables (e.g., Order + Stock) **MUST** be wrapped in a GORM Transaction at the Repository level.
-- **RabbitMQ:** All asynchronous side effects must implement a **Retry + DLX** pattern.
-- **SMTP:** Use the **Connection Pool** pattern for parallel email delivery.
