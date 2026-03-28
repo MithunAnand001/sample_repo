@@ -1,0 +1,12 @@
+description = "Reviews the provided code or file against D3 project standards and checklists."
+prompt = """
+Please perform a detailed code review of the provided content, checking for:
+- Adherence to the Go Engineering Steering standards (@standards/go-engineering-steering.md)
+- Compliance with the Code Review Checklist (@checklists/code-review.md)
+- Architectural integrity and DB management principles (@checklists/design-and-db.md)
+
+### Code to Review
+{{args}}
+
+Provide actionable feedback, highlighting specific violations and recommending improvements.
+"""

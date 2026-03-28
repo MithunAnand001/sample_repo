@@ -1,0 +1,15 @@
+description = "Audits a design or DB schema against D3 project principles."
+prompt = """
+Please audit the following design/schema proposal against our project's core principles:
+
+### Core Principles
+@checklists/design-and-db.md
+
+### Design/Schema to Audit
+{{args}}
+
+Evaluate for:
+1. SOLID & Clean Code violations.
+2. Database Management & Integrity (atomicity, indexing, query performance).
+3. Stock & Inventory Management logic (atomic decrements, rollback safety).
+"""
